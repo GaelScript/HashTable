@@ -1,0 +1,3 @@
+This implementation of two hash tables is essentially divided into two classes in one header file. The first class supports a hash table with chaining, while the second class supports linear probing. 
+A note on the remove function for both implementations: as they are, they both return the first instance of a specific key, as per instructor's instructions. 
+Arrays are both set up to be filled with nullptr's by default, as I couldn't get setting them to entries to work (my compiler would just stop working). Various cases in both cases are set up to avoid segmentation faults (i.e., table[index]->key when table[index] is nullptr. This gave me a lot of trouble).
